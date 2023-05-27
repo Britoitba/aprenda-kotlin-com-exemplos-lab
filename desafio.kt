@@ -52,11 +52,10 @@ fun main() {
     conteudosComplexa.add(ConteudoEducacional("Curso Dificil 3",50))
 
 
-    val teste = HashMap<Aluno, Any>()
-    teste[aluno1] = Formacao("Backend", conteudosBackend, Nivel.INTERMEDIARIO).matricular(aluno1)
-    teste[aluno1] = Formacao("Frontend", conteudosFrontend, Nivel.INTERMEDIARIO).matricular(aluno1)
-    teste[aluno2] = Formacao("Backend", conteudosBackend, Nivel.INTERMEDIARIO).matricular(aluno2)
-    teste[aluno3] = Formacao("Simples", conteudosSimples, Nivel.BASICO).matricular(aluno3)
-    teste[aluno4] = Formacao("Complexa", conteudosComplexa, Nivel.AVANCADO).matricular(aluno4)
+    Formacao("Backend", conteudosBackend, Nivel.INTERMEDIARIO).matricular(aluno1)
+    Formacao("Frontend", conteudosFrontend, Nivel.INTERMEDIARIO).matricular(aluno1)
+    Formacao("Backend", conteudosBackend, Nivel.INTERMEDIARIO).matricular(aluno2)
+    Formacao("Simples", conteudosSimples, Nivel.BASICO).matricular(aluno3)
+    Formacao("Complexa", conteudosComplexa, Nivel.AVANCADO).matricular(aluno4)
 
 }
